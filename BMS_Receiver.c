@@ -6,8 +6,8 @@ int main()
 {
   int RxdSig[NUM_OF_READINGS];
   char str[100];
-  gets( str );
-  puts( str );
+  fgets( str );
+  fputs( str );
   for (int i=0; i<NUM_OF_READINGS; i++)
   {
     scanf("%d\n",&RxdSig[i]);
