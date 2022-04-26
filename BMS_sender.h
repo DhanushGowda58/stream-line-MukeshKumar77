@@ -12,3 +12,4 @@ extern int SOCData[NUMBERS_OF_READINGS];
 void printToConsole(int batteryData[]);
 bool readDataFromFile(FILE* filePtr, int sensorData[]);
 bool BMS_DataSender(void);
+bool BMS_DataReceiver(void);
