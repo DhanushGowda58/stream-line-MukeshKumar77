@@ -9,5 +9,6 @@ int main()
   {
     scanf("%d\n",&RxdSig[i]);
   }
+  printf("Temperature Data = %d\n", RxdSig[20])
   return 0;
 }
