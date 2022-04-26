@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdbool.h>
+//#include <stdbool.h>
 #include "BMS_sender.h"
-
-bool BMS_DataReceiver()
+extern int TemperatureData[NUMBERS_OF_READINGS];
+int main()
 {
   int RxdSig[NUMBERS_OF_READINGS];
   for (int i=0; i<NUMBERS_OF_READINGS; i++)
@@ -11,5 +11,5 @@ bool BMS_DataReceiver()
     scanf("%d\n",&RxdSig[i]);
     printf("Temperature Data = %d\n", TemperatureData[i]);
   }
-  return true;
+  return 0;
 }
