@@ -8,7 +8,7 @@ int main()
   for (int i=0; i<NUM_OF_READINGS; i++)
   {
     scanf("%d\n",&RxdSig[i]);
+    printf("Temperature Data = %d\n", TemperatureData[i]);
   }
-  printf("Temperature Data = %d\n", RxdSig[20]);
   return 0;
 }
