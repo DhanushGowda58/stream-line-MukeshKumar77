@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "BMS_sender.h"
 
-#define NUM_OF_READINGS 50
 int main()
 {
   int RxdSig[NUM_OF_READINGS];
