@@ -11,19 +11,24 @@ int main()
    {
     TempData[i] = getc(stdin);
    } 
-  min = max = TempData[0];
-  for( j=0; j<500; j++ ) 
-   {
-	if (min > TempData[j])
-		min = TempData[j];
-	if (max < TempData[j])
-		max = TempData[j];
-    //putc(TempData[j],stdout);
-   }  
-  printf("\n Minimum value = %c\n", min);
-  printf("Maximum value = %c\n", max);
+
    for( k=0; k<500; k++ ) 
    {
 	printf("%c", TempData[k]);
-   }
+   }	
+findMinMax();
+}
+static void findMinMax()
+{
+	  min = max = TempData[0];
+	  for( j=0; j<500; j++ ) 
+	   {
+		if (min > TempData[j])
+			min = TempData[j];
+		if (max < TempData[j])
+			max = TempData[j];
+	    //putc(TempData[j],stdout);
+	   }  
+	  printf("\n Minimum value = %c\n", min);
+	  printf("Maximum value = %c\n", max);
 }
