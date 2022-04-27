@@ -3,7 +3,7 @@
 
 int main() 
 {
-  lond int TempData[500];
+  long int TempData[500];
    long int i;
   int min = 0, max = 0;
    for( i=0; i<500; i++ ) 
