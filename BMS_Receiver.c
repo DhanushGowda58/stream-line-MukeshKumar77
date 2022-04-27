@@ -8,8 +8,11 @@ int main()
    for( i=0; i<100; i++ ) 
    {
     TempData[i] = getc(stdin);
-    printf("Received data = %d\n", TempData[i]);
     //putc(TempData[i],stdout);
-   }       
+   }  
+   for( i=0; i<100; i++ ) 
+   {
+    printf("temp data = %d\n", TempData[i]);
+   }  
 
 }
