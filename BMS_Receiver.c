@@ -3,7 +3,7 @@
 char TempData[500];
 int main() 
 {
-   long int i;
+   long int i,k;
 
    for( i=0; i<500; i++ ) 
    {
@@ -18,7 +18,7 @@ findMinMax();
 }
 static void findMinMax()
 {
-	long int j,k;
+	long int j;
   	char min, max;
 	  min = max = TempData[0];
 	  for( j=0; j<500; j++ ) 
