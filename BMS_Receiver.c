@@ -11,7 +11,7 @@ int main()
     TempData[i] = getc(stdin); 
     putc(TempData[i],stdout);
    } 
-   for( i=0; i<100; i++ ) 
+   for( i=23; i<100; i++ ) 
    {       
     min = max = TempData[0];
 	if (min > TempData[i])
