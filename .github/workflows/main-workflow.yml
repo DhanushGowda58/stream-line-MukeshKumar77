@@ -21,7 +21,7 @@ jobs:
       run: ./testsender
       
     - name: Pipeline sender/receiver
-      run: ./testsender *> out.txt
+      run: ./testsender | ./testreceiver
       
     - name: run receiver
       run: ./testreceiver
