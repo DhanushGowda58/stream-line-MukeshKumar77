@@ -17,7 +17,7 @@ bool readDataFromFile(FILE* filePtr, int sensorData[])
 {
     if (NULL == filePtr)
     {
-	//printf("file cannot be opened \n");
+	printf("file cannot be opened \n");
 	return false;
     }
 
@@ -38,10 +38,10 @@ bool BMS_DataSender()
 	bool retVal1, retVal2;
 	FILE* fptr;
 	fptr = fopen("temparatue_sensor.txt","r");
-	//printf("Temperature Sensor Data\n");
+	printf("Temperature Sensor Data\n");
 	retVal1 = readDataFromFile(fptr, TemperatureData);
 
-	//printf("\nSOC Sensor Data\n");
+	printf("\nSOC Sensor Data\n");
 	fptr = fopen("soc_sensor.txt","r");
 	retVal2 = readDataFromFile(fptr, SOCData);
 
