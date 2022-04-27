@@ -12,7 +12,7 @@ jobs:
 
         
     - name: build sender
-      run: g++ -Wall -Wextra -o testsender Send.c
+      run: g++ -Wall -Wextra -o testsender BMS_sender.c
   
     - name: build receiver
       run: g++ -Wall -Wextra -o testreceiver BMS_Receiver.c
