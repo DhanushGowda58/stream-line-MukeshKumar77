@@ -24,6 +24,6 @@ int main()
   printf("Maximum value = %d\n", max);
    for( k=0; k<500; k++ ) 
    {
-	printf("%d\n", TempData[k]);
+	printf("%c\n", TempData[k]);
    }
 }
