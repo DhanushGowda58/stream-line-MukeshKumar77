@@ -3,7 +3,7 @@
 
 int main() 
 {
-  string TempData;
+  char TempData;
    long int i;
   //int min = 0, max = 0;
 
