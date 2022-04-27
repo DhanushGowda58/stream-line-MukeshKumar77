@@ -21,13 +21,10 @@ static void findMinMax()
 
 int main() 
 {
-   long int i,k,m;
-char range;
+   long int i,k;
    for( i=0; i<500; i++ ) 
    {
-	   if((range >= char A) && (range <= char(~)))
-		   for (m=0;m<500;m++)
-			   TempData[m] = getc(stdin);
+	TempData[i] = getc(stdin);
    } 
 
    for( k=0; k<500; k++ ) 
