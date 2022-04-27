@@ -3,7 +3,7 @@
 
 int main() 
 {
-  int TempData[500];
+  char TempData[500];
    long int i,j,k;
   int min = 0, max = 0;
 
@@ -24,6 +24,6 @@ int main()
   printf("Maximum value = %d\n", max);
    for( k=0; k<500; k++ ) 
    {
-	printf("%s", TempData[k]);
+	printf("%c", TempData[k]);
    }
 }
