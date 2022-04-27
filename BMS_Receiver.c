@@ -9,7 +9,7 @@ int main()
 
    for( i=0; i<500; i++ ) 
    {
-    fgets(TempData,500,stdin); 
+    TempData[i] = getc(stdin);
    } 
   min = max = TempData[0];
    for( j=0; j<500; j++ ) 
@@ -24,6 +24,6 @@ int main()
   printf("Maximum value = %d\n", max);
    for( k=0; k<500; k++ ) 
    {
-	printf("%s\n", TempData[k]);
+	printf("%c\n", TempData[k]);
    }
 }
