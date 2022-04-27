@@ -1,11 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+char TempData[500];
 int main() 
 {
-  char TempData[500];
    long int i;
-  char min, max;
 
    for( i=0; i<500; i++ ) 
    {
