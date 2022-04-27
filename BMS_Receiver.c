@@ -5,7 +5,7 @@ int main()
 {
   int TempData[100];
    long int i;
-  int min, max;
+  int min = 0, max = 0;
    for( i=0; i<100; i++ ) 
    {
     TempData[i] = getc(stdin); 
@@ -14,11 +14,11 @@ int main()
    for( i=0; i<100; i++ ) 
    {       
     min = max = TempData[0];
-		if (min > TempData[i])
-			min = TempData[i];
-		if (max < TempData[i])
-			max = TempData[i];
+	if (min > TempData[i])
+		min = TempData[i];
+	if (max < TempData[i])
+		max = TempData[i];
    }
-  printf("minimum value = %d\n", min);
-  printf("maximum value = %d\n", max);
+  printf("\n Minimum value = %d\n", min);
+  printf("Maximum value = %d\n", max);
 }
