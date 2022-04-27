@@ -12,7 +12,7 @@
   }
 }*/
 
-void main(int argc, char *argv[]) 
+int main(int argc, char *argv[]) 
 {
    int i;
 
@@ -20,5 +20,5 @@ void main(int argc, char *argv[])
    {
         printf("%s", argv[i]); //Do whatever you want with argv[i]
    }       
-
+return 0;
 }
