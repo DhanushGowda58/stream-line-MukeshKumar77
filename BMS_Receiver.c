@@ -22,4 +22,5 @@ int main()
    }  
   printf("\n Minimum value = %d\n", min);
   printf("Maximum value = %d\n", max);
+	printf("%d\n", TempData[0]);
 }
