@@ -18,7 +18,7 @@ int main()
 		min = TempData[j];
 	if (max < TempData[j])
 		max = TempData[j];
-    putc(TempData[j],stdout);
+    //putc(TempData[j],stdout);
    }  
   printf("\n Minimum value = %d\n", min);
   printf("Maximum value = %d\n", max);
