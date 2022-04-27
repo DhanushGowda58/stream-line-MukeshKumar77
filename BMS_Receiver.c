@@ -24,7 +24,7 @@ int main()
    long int i,k;
    for( i=0; i<500; i++ ) 
    {
-	TempData[i] = gets(stdin);
+	TempData[i] = getc(stdin);
    } 
 
    for( k=0; k<500; k++ ) 
