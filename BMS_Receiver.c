@@ -4,7 +4,7 @@
 int main() 
 {
   long int TempData[500] = {0};
-   long int i;
+   long int i,j,k;
   int min = 0, max = 0;
 
    for( i=0; i<500; i++ ) 
@@ -12,15 +12,18 @@ int main()
     TempData[i] = getc(stdin); 
    } 
   min = max = TempData[0];
-   for( i=0; i<500; i++ ) 
+   for( j=0; j<500; j++ ) 
    {
-	if (min > TempData[i])
-		min = TempData[i];
-	if (max < TempData[i])
-		max = TempData[i];
-    putc(TempData[i],stdout);
+	if (min > TempData[j])
+		min = TempData[j];
+	if (max < TempData[j])
+		max = TempData[j];
+    putc(TempData[j],stdout);
    }  
   printf("\n Minimum value = %d\n", min);
   printf("Maximum value = %d\n", max);
-	printf("%d\n", TempData[38]);
+   for( k=0; k<500; k++ ) 
+   {
+	printf("%d\n", TempData[k]);
+   }
 }
