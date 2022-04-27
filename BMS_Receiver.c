@@ -3,16 +3,15 @@
 
 int main() 
 {
-  char TempData;
-   long int i;
-  //int min = 0, max = 0;
+  int TempData[500];
+   long int i,j,k;
+  int min = 0, max = 0;
 
    for( i=0; i<500; i++ ) 
    {
-    TempData = getc(stdin);
-	printf("%s\n", TempData);
+    TempData[i] = getc(stdin);
    } 
-  /*min = max = TempData[0];
+  min = max = TempData[0];
   for( j=0; j<500; j++ ) 
    {
 	if (min > TempData[j])
@@ -26,5 +25,5 @@ int main()
    for( k=0; k<500; k++ ) 
    {
 	printf("%c\n", TempData[k]);
-   }*/
+   }
 }
