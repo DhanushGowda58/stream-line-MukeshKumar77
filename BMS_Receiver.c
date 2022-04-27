@@ -12,12 +12,13 @@
   }
 }*/
 
-int main(int argc, char *argv[]) 
+int main() 
 {
+  char c;
    int i;
-   for( i=0; i<argc; i++ ) 
+   for( i=0; i<50; i++ ) 
    {
-     printf("Received data\n");
-        printf("%s", argv[i]); //Do whatever you want with argv[i]
+          c=getc(stdin);
+   putc(c,stdout);
    }       
 }
