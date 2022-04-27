@@ -3,7 +3,7 @@
 
 int main() 
 {
-  int TempData;
+  char TempData;
    long int i;
    for( i=0; i<500; i++ ) 
    {
