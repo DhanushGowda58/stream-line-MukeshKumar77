@@ -16,7 +16,8 @@ int main()
    }	
 findMinMax();
 }
-static void findMinMax()
+
+void findMinMax()
 {
 	long int j;
   	char min, max;
