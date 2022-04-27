@@ -4,13 +4,13 @@
 int main() 
 {
   string TempData;
-   long int i,j,k;
+   long int i;
   //int min = 0, max = 0;
 
    for( i=0; i<500; i++ ) 
    {
-    TempData= getc(stdin);
-	   printf("%s\n", TempData);
+    TempData = getc(stdin);
+	printf("%s\n", TempData);
    } 
   /*min = max = TempData[0];
   for( j=0; j<500; j++ ) 
