@@ -9,16 +9,14 @@ int main()
    for( i=0; i<100; i++ ) 
    {
     TempData[i] = getc(stdin); 
-    putc(TempData[i],stdout);
-   } 
-   for( i=23; i<100; i+2 ) 
-   {       
-    min = max = TempData[0];
+	min = max = TempData[0];
 	if (min > TempData[i])
 		min = TempData[i];
 	if (max < TempData[i])
 		max = TempData[i];
-   }
+    putc(TempData[i],stdout);
+   }     
+
   printf("\n Minimum value = %d\n", min);
   printf("Maximum value = %d\n", max);
 }
