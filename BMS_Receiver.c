@@ -8,7 +8,8 @@ int main()
    for( i=0; i<100; i++ ) 
    {
     TempData[i] = getc(stdin);
-    putc(TempData[i],stdout);
+    printf("Received data = %d\n", TempData[i]);
+    //putc(TempData[i],stdout);
    }       
-  printf("Received data\n");
+
 }
