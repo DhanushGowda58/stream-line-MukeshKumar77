@@ -25,7 +25,9 @@ int main()
 
    for( i=0; i<500; i++ ) 
    {
-    TempData[i] = getc(stdin);
+	   if(char range >= A && range <= 122)
+		   for (m=0;m<500;m++)
+			   TempData[m] = getc(stdin);
    } 
 
    for( k=0; k<500; k++ ) 
