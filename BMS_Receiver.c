@@ -15,10 +15,10 @@
 int main() 
 {
   char c;
-   int i;
-   for( i=0; i<50; i++ ) 
+   long int i;
+   for( i=0; i<500; i++ ) 
    {
-          c=getc(stdin);
-   putc(c,stdout);
+    c=getc(stdin);
+    putc(c,stdout);
    }       
 }
