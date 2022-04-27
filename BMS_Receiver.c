@@ -2,7 +2,7 @@
 #include <stdlib.h>
 //#include <stdbool.h>
 #include "BMS_sender.h"
-void printToConsole(int batteryData[])
+/*void printToConsole(int batteryData[])
 {
   int RxdSig[NUMBERS_OF_READINGS];
   for (int i=0; i<NUMBERS_OF_READINGS; i++)
@@ -10,4 +10,15 @@ void printToConsole(int batteryData[])
     scanf("%d\n",&RxdSig[i]);
     printf("Temperature Data = %d\n", batteryData[i]);
   }
+}*/
+
+void main(int argc, char *argv[]) 
+{
+   int i;
+
+   for( i=0; i<argc; i++ ) 
+   {
+        printf("%s", argv[i]); //Do whatever you want with argv[i]
+   }       
+
 }
