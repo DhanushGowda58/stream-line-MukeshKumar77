@@ -6,7 +6,7 @@ int main()
   int TempData[100];
    long int i;
   int min = 0, max = 0;
-   for( i=0; i<100; i+2 ) 
+   for( i=0; i<100; i++ ) 
    {
     TempData[i] = getc(stdin); 
     putc(TempData[i],stdout);
