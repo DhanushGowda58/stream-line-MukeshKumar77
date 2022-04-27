@@ -10,4 +10,5 @@ int main()
     TempData = getc(stdin);
     putc(TempData,stdout);
    }       
+  printf("Received data\n");
 }
