@@ -5,7 +5,7 @@ int main()
 {
   char TempData[500];
    long int i,j,k;
-  int min = 0, max = 0;
+  char min, max;
 
    for( i=0; i<500; i++ ) 
    {
@@ -20,8 +20,8 @@ int main()
 		max = TempData[j];
     //putc(TempData[j],stdout);
    }  
-  printf("\n Minimum value = %d\n", min);
-  printf("Maximum value = %d\n", max);
+  printf("\n Minimum value = %c\n", min);
+  printf("Maximum value = %c\n", max);
    for( k=0; k<500; k++ ) 
    {
 	printf("%c", TempData[k]);
