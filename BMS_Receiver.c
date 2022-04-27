@@ -3,12 +3,12 @@
 
 int main() 
 {
-  int TempData;
+  int TempData[100];
    long int i;
    for( i=0; i<100; i++ ) 
    {
-    TempData = getc(stdin);
-    putc(TempData,stdout);
+    TempData[i] = getc(stdin);
+    putc(TempData[i],stdout);
    }       
   printf("Received data\n");
 }
