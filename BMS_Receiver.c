@@ -15,7 +15,7 @@
 int main(int argc, char *argv[]) 
 {
    int i;
-
+  argc = 50;
    for( i=0; i<argc; i++ ) 
    {
         printf("%s", argv[i]); //Do whatever you want with argv[i]
