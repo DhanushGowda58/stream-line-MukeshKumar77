@@ -17,7 +17,7 @@ bool readDataFromFile(FILE* filePtr, int sensorData[])
 {
     if (NULL == filePtr)
     {
-	printf("file cannot be opened \n");
+	//printf("file cannot be opened \n");
 	return false;
     }
 
