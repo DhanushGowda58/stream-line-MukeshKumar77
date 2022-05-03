@@ -25,7 +25,7 @@ static void Avg(int Data[], char entity, char unit)
 		Average += Data[i];
 	}
 	Average = Average/50;
-	printf("%s Average = %f %s \n", entity, Average, unit);
+	printf("%c Average = %f %c \n", entity, Average, unit);
 }
 
 
