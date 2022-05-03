@@ -1,7 +1,21 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
+
 char TempData[600];
+
+char *remove_white_spaces(char *TempData)
+{
+	int i = 0, j = 0;
+	while (TempData[i])
+	{
+		if (TempData[i] != ' ')
+          TempData[j++] = TempData[i];
+		i++;
+	}
+	TempData[j] = '\0';
+	return TempData;
+}
+
 static void findMinMax()
 {
 	long int j = 0;
@@ -21,20 +35,17 @@ static void findMinMax()
 
 int main() 
 {
-   long int i =0;
+long int i =0;
    for( i=0; i<600; i++ ) 
    {
 	TempData[i] = getc(stdin);
 	 printf("%c", TempData[i]);
 
    } 
-for( i=0; i<600; i++ ) 
-   {
-	 printf("%d\n", TempData[i]);
-   } 
+remove_white_spaces(TempData);
 printf("Computing Min and Max\n");
 findMinMax();
-	return 0;
+return 0;
 }
 
 
