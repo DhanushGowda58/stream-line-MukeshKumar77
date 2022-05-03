@@ -3,20 +3,17 @@
 
 int TempData[50] = {0};
 
-static void findMinMax()
+void findMinMax()
 {
-	long int j = 0;
-  	int min, max;
-	  min = max = TempData[24];
-	  for( j=0; j<50; j++ ) 
+	int min = max = TempData[0];
+	  for( int j=0; j<50; j++ ) 
 	   {
 			if (min > TempData[j])
 				min = TempData[j];
 			if (max < TempData[j])
 				max = TempData[j];
 	   }  
-	  printf("\n Minimum value = %d\n", min);
-	  printf("Maximum value = %d\n", max);
+	  printf("\nMinimum Temperature = %d degC, Maximum Temperature = %d degC\n", min, max);
 }
 
 int main() 
@@ -30,7 +27,7 @@ printf("%20s", TempRead);
 	for(i=0;i<50;i++)
 	{
 		scanf("%d", &TempData[i]);
-		printf("\n%d\n", TempData[i]);
+		//printf("\n%d\n", TempData[i]);
 	}
 
 printf("Computing Min and Max\n");
