@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 int TempData[50] = {0};
 
@@ -45,8 +46,8 @@ printf("%20s", TempRead);
 
 printf("Computing Min and Max\n");
 findMinMax();
-char entity[11] = "Temperature";
-char unit[4] = "degC";
+char entity[] = "Temperature";
+char unit[] = "degC";
 Avg(TempData, entity, unit);
 return 0;
 }
