@@ -29,7 +29,7 @@ void Avg(int Data[], char *entity, char *unit)
 	printf("%s Average = %f\t%s \n", entity, Average, unit);
 }
 
-void TempReadConsole()
+void TempReadConsole(*entity, *unit)
 {
 char TempRead[600];
 int i = 0;
@@ -42,8 +42,8 @@ scanf("%20s", TempRead);
 		scanf("%d", &TempData[i]);
 		//printf("\n%d\n", TempData[i]);
 	}
-char entity[] = "Temperature";
-char unit[] = "degC";
+char *entity[] = "Temperature";
+char *unit[] = "degC";
 }
 
 int main() 
