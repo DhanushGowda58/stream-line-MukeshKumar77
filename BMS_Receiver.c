@@ -5,17 +5,17 @@ int TempData[50] = {0};
 static void findMinMax()
 {
 	long int j = 0;
-  	char min, max;
+  	int min, max;
 	  min = max = TempData[24];
-	  for( j=24; j<165; j++ ) 
+	  for( j=0; j<50; j++ ) 
 	   {
 			if (min > TempData[j])
 				min = TempData[j];
 			if (max < TempData[j])
 				max = TempData[j];
 	   }  
-	  printf("\n Minimum value = %c\n", min);
-	  printf("Maximum value = %c\n", max);
+	  printf("\n Minimum value = %d\n", min);
+	  printf("Maximum value = %d\n", max);
 }
 
 int main() 
