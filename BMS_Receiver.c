@@ -3,10 +3,10 @@
 char TempData[500];
 static void findMinMax()
 {
-	long int j;
+	long int j = 0;
   	char min, max;
 	  min = max = TempData[0];
-	  for( j=0; j<500; j++ ) 
+	  for( j=24; j<165; j++ ) 
 	   {
 		if (min > TempData[j])
 			min = TempData[j];
