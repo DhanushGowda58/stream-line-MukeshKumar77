@@ -10,11 +10,13 @@ static void findMinMax()
 	  min = max = TempData[24];
 	  for( j=24; j<165; j++ ) 
 	   {
-		if (min > TempData[j])
-			min = TempData[j];
-		if (max < TempData[j])
-			max = TempData[j];
-	    //putc(TempData[j],stdout);
+		if (TempData[i] != ' ')
+		{
+			if (min > TempData[j])
+				min = TempData[j];
+			if (max < TempData[j])
+				max = TempData[j];
+		}
 	   }  
 	  printf("\n Minimum value = %c\n", min);
 	  printf("Maximum value = %c\n", max);
