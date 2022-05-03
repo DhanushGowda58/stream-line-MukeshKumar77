@@ -2,6 +2,7 @@
 #include <stdlib.h>
 
 int TempData[50] = {0};
+
 static void findMinMax()
 {
 	long int j = 0;
