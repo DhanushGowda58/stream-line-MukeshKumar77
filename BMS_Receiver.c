@@ -17,7 +17,7 @@ void findMinMax()
 	  printf("\nMinimum Temperature = %d degC, Maximum Temperature = %d degC\n", min, max);
 }
 
-static void Avg(int Data[], char entity, char unit)
+static void Avg(int Data[], char entity[], char unit[])
 {
 	float Average = 0.0;
 	for (int i=0;i<50;i++)
@@ -33,7 +33,7 @@ int main()
 {
 char TempRead[600];
 int i = 0;
-char entity, unit;
+char entity[11], unit[5];
 scanf("%20s", TempRead);
 scanf("%20s", TempRead);
 scanf("%20s", TempRead);
