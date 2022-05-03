@@ -25,7 +25,7 @@ int main()
    for( i=0; i<600; i++ ) 
    {
 	TempData[i] = getc(stdin);
-	 printf("%c", TempData);
+	 printf("%c", TempData[i]);
 
    } 
 printf("Computing Min and Max\n");
