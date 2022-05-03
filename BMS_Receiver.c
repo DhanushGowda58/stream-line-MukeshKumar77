@@ -5,7 +5,7 @@ static void findMinMax()
 {
 	long int j = 0;
   	char min, max;
-	  min = max = TempData[0];
+	  min = max = TempData[24];
 	  for( j=24; j<165; j++ ) 
 	   {
 		if (min > TempData[j])
