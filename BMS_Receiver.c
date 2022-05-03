@@ -29,15 +29,14 @@ void Avg(int Data[], char *entity, char *unit)
 	printf("%s Average = %f\t%s \n", entity, Average, unit);
 }
 
-
-int main() 
+void TempReadConsole()
 {
 char TempRead[600];
 int i = 0;
 scanf("%20s", TempRead);
 scanf("%20s", TempRead);
 scanf("%20s", TempRead);
-printf("%20s", TempRead);
+//printf("%20s", TempRead);
 	for(i=0;i<50;i++)
 	{
 		scanf("%d", &TempData[i]);
@@ -45,6 +44,11 @@ printf("%20s", TempRead);
 	}
 char entity[] = "Temperature";
 char unit[] = "degC";
+}
+
+int main() 
+{
+TempReadConsole();
 findMinMax(TempData, entity, unit);
 Avg(TempData, entity, unit);
 return 0;
