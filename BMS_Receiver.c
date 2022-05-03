@@ -24,13 +24,13 @@ int main()
    long int i =0,k=0;
    for( i=0; i<500; i++ ) 
    {
-	TempDat[i] = getc(stdin);
+	TempData[i] = getc(stdin);
 
    } 
 
    for( k=0; k<500; k++ ) 
    {
-	printf("%c", TempData);
+	printf("%s", TempData);
    }	
 findMinMax();
 }
