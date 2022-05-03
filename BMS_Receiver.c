@@ -23,7 +23,7 @@ static void findMinMax()
 int main() 
 {
 long int i =0;
-   for( i=0; i<600; i++ ) 
+   for( i=0; i<165; i++ ) 
    {
 	TempData[i] = getc(stdin);
 	printf("%c", TempData[i]);
