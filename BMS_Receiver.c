@@ -8,7 +8,7 @@ int SoCData[50] = {0};
 void findMinMax(int Data[], char *entity, char *unit)
 {
 	int min , max;
-	min = max = TempData[0];
+	min = max = Data[0];
 	  for( int j=0; j<50; j++ ) 
 	   {
 			if (min > Data[j])
@@ -64,7 +64,7 @@ void SimMovAvg(int Data[], char *entity, char *unit)
 {
 	float SMA = 0.0;
 	for (int k=0; k<46; k++)
-		SMA = float (TempData[k]+TempData[k+1]+TempData[k+2]+TempData[k+3]+TempData[k+4]) / 5;
+		SMA = float (Data[k]+Data[k+1]+Data[k+2]+Data[k+3]+Data[k+4]) / 5;
 	printf("Simple Moving Average of %s data = %f %s\n", entity, SMA, unit);
 }
 
