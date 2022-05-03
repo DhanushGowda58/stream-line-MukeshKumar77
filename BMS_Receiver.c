@@ -3,6 +3,7 @@
 #include <string.h>
 
 int TempData[50] = {0};
+int SoCData[50] = {0};
 
 void findMinMax(int Data[], char *entity, char *unit)
 {
@@ -44,6 +45,21 @@ scanf("%20s", TempRead);
 	}
 }
 
+void SoCReadConsole()
+{
+char SoCRead[600];
+int i = 0;
+scanf("%20s", SoCRead);
+scanf("%20s", SoCRead);
+scanf("%20s", SoCRead);
+printf("%20s", SoCRead);
+	for(i=0;i<50;i++)
+	{
+		scanf("%d", &SoCData[i]);
+		//printf("\n%d\n", TempData[i]);
+	}
+}
+
 void SimMovAvg(int Data[], char *entity, char *unit)
 {
 	float SMA = 0.0;
@@ -60,6 +76,13 @@ char unit[] = "degC";
 findMinMax(TempData, entity, unit);
 Avg(TempData, entity, unit);
 SimMovAvg(TempData, entity, unit);
+	
+SoCReadConsole();
+char entity[] = "SoC";
+char unit[] = "%";
+findMinMax(SoCData, entity, unit);
+Avg(SoCData, entity, unit);
+SimMovAvg(SoCData, entity, unit);
 return 0;
 }
 
