@@ -32,6 +32,7 @@ int main()
    {
 	printf("%s", TempData);
    }	
+printf("Computing Min and Max\n");
 findMinMax();
 }
 
