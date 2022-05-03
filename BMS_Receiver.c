@@ -25,7 +25,7 @@ static void Avg(int Data[], char entity[], char unit[])
 		Average += Data[i];
 	}
 	Average = Average/50;
-	printf("%c Average = %f %c \n", entity, Average, unit);
+	printf("%s Average = %f\t%s \n", entity, Average, unit);
 }
 
 
@@ -46,8 +46,8 @@ printf("%20s", TempRead);
 
 printf("Computing Min and Max\n");
 findMinMax();
-entity = "Temperature";
-unit = "degC";
+entity[11] = "Temperature";
+unit[4] = "degC";
 Avg(TempData, entity, unit);
 return 0;
 }
