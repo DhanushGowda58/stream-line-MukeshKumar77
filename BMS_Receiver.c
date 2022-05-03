@@ -9,11 +9,12 @@ char *remove_white_spaces(char *TempData)
 	while (TempData[i])
 	{
 		if (TempData[i] != ' ')
-          TempData[j++] = TempData[i];
+			TempData[j++] = TempData[i];
 		i++;
+		printf("%d", TempData[j]);
 	}
 	TempData[j] = '\0';
-	return TempData;
+
 }
 
 static void findMinMax()
