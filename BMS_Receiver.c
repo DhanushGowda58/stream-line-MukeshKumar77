@@ -28,9 +28,9 @@ long int i =0;
    for( i=0; i<165; i++ ) 
    {
 	TempData[i] = getc(stdin);
-	printf("%c", TempData[i]);
+	//printf("%c", TempData[i]);
    } 
-
+printf("\n%s\n", TempData);
 printf("Computing Min and Max\n");
 findMinMax();
 return 0;
