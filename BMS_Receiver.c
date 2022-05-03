@@ -22,9 +22,9 @@ static void MovAvg(int TempData[])
 	float SMA = 0.0;
 	for (int i=0;i<50;i++)
 	{
-		SMA += TempData[i]/50; 
-		printf("Moving Average = %0.4f degC \n", SMA);
+		SMA += TempData[i];
 	}
+	printf("Moving Average = %f degC \n", SMA/50);
 }
 
 
