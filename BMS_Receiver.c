@@ -33,6 +33,7 @@ int main()
 {
 char TempRead[600];
 int i = 0;
+string entity, unit;
 scanf("%20s", TempRead);
 scanf("%20s", TempRead);
 scanf("%20s", TempRead);
@@ -45,7 +46,8 @@ printf("%20s", TempRead);
 
 printf("Computing Min and Max\n");
 findMinMax();
-Avg(TempData, Temperature, degC);
+entity = Temperature, unit = degC;
+Avg(TempData, entity, unit);
 return 0;
 }
 
