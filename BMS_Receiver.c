@@ -21,13 +21,6 @@ static void findMinMax()
 
 int main() 
 {
-//long int i =0;
-   //for( i=0; i<15; i++ ) 
-   //{
-	//TempData[i] = getc(stdin);
-	//printf("%c", TempData[i]);
-   //} 
-
 char TempRead[600];
 int i = 0;
 scanf("%20s", TempRead);
