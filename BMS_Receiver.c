@@ -46,8 +46,8 @@ printf("%20s", TempRead);
 
 printf("Computing Min and Max\n");
 findMinMax();
-entity[] = "Temperature";
-unit[] = "degC";
+entity[11] = "Temperature";
+unit[3] = "degC";
 Avg(TempData, entity, unit);
 return 0;
 }
