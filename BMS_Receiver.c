@@ -33,7 +33,7 @@ int main()
 {
 char TempRead[600];
 int i = 0;
-char entity[11], unit[5];
+const char entity[11], unit[5];
 scanf("%20s", TempRead);
 scanf("%20s", TempRead);
 scanf("%20s", TempRead);
