@@ -5,7 +5,8 @@ int TempData[50] = {0};
 
 void findMinMax()
 {
-	int min = max = TempData[0];
+	int min , max;
+	min = max = TempData[0];
 	  for( int j=0; j<50; j++ ) 
 	   {
 			if (min > TempData[j])
