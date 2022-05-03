@@ -7,7 +7,7 @@ int TempData[50] = {0};
 void findMinMax(int Data[], char *entity, char *unit)
 {
 	int min , max;
-	min = max = Data[0];
+	min = max = TempData[0];
 	  for( int j=0; j<50; j++ ) 
 	   {
 			if (min > Data[j])
