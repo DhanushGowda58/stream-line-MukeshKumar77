@@ -29,7 +29,7 @@ long int i =0;
    } 
 printf("\n%s\n", TempData);
 printf("Computing Min and Max\n");
-findMinMax(TempData);
+findMinMax();
 return 0;
 }
 
