@@ -17,14 +17,15 @@ void findMinMax()
 	  printf("\nMinimum Temperature = %d degC, Maximum Temperature = %d degC\n", min, max);
 }
 
-static void MovAvg(int TempData[])
+static void Avg(int Data[], string entity, string unit)
 {
-	float SMA = 0.0;
+	float Average = 0.0;
 	for (int i=0;i<50;i++)
 	{
-		SMA += TempData[i];
+		Average += Data[i];
 	}
-	printf("Moving Average = %f degC \n", SMA/50);
+	Average = Average/50;
+	printf("%s Average = %f %s \n", entity, Average, unit);
 }
 
 
@@ -44,7 +45,7 @@ printf("%20s", TempRead);
 
 printf("Computing Min and Max\n");
 findMinMax();
-MovAvg(TempData);
+Avg(TempData, Temperature, degC);
 return 0;
 }
 
