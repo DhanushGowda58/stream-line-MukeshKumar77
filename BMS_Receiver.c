@@ -15,7 +15,7 @@ void findMinMax(int Data[], char *entity, char *unit)
 			if (max < Data[j])
 				max = Data[j];
 	   }  
-	  printf("\nMinimum %s = %d\t%d, Maximum %s = %d\t%d\n", entity, min, unit, entity, max, unit);
+	  printf("\nMinimum %s = %d\t%s, Maximum %s = %d\t%s\n", entity, min, unit, entity, max, unit);
 }
 
 void Avg(int Data[], char *entity, char *unit)
