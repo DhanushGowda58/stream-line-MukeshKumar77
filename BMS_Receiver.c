@@ -28,6 +28,10 @@ int main()
 	 printf("%c", TempData[i]);
 
    } 
+for( i=0; i<600; i++ ) 
+   {
+	 printf("%d", TempData[i]);
+   } 
 printf("Computing Min and Max\n");
 findMinMax();
 	return 0;
