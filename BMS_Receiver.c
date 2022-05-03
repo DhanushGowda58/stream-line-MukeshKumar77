@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
-char TempData[500];
+char TempData[600];
 static void findMinMax()
 {
 	long int j = 0;
@@ -21,19 +21,16 @@ static void findMinMax()
 
 int main() 
 {
-   long int i =0,k=0;
-   for( i=0; i<500; i++ ) 
+   long int i =0;
+   for( i=0; i<600; i++ ) 
    {
 	TempData[i] = getc(stdin);
+	 printf("%s", TempData);
 
    } 
-
-   for( k=0; k<500; k++ ) 
-   {
-	printf("%s", TempData);
-   }	
 printf("Computing Min and Max\n");
 findMinMax();
+	return 0;
 }
 
 
