@@ -15,7 +15,7 @@ void findMinMax(int Data[], char *entity, char *unit)
 			if (max < Data[j])
 				max = Data[j];
 	   }  
-	  printf("\nMinimum %s = %d\t%s, Maximum %s = %d\t%s\n", entity, min, unit, entity, max, unit);
+	  printf("\nMinimum %s = %d %s, Maximum %s = %d %s\n", entity, min, unit, entity, max, unit);
 }
 
 void Avg(int Data[], char *entity, char *unit)
@@ -26,7 +26,7 @@ void Avg(int Data[], char *entity, char *unit)
 		Average += Data[i];
 	}
 	Average = Average/50;
-	printf("%s Average = %f\t%s \n", entity, Average, unit);
+	printf("%s Average = %f %s\n", entity, Average, unit);
 }
 
 void TempReadConsole()
@@ -49,7 +49,7 @@ void SimMovAvg(int Data[], char *entity, char *unit)
 	float SMA = 0.0;
 	for (int k=0; k<47; k++)
 		SMA = (TempData[k]+TempData[k+1]+TempData[k+2]+TempData[k+3]+TempData[k+4]) / 5;
-	printf("Simple Moving Average of %s data = %f\t%s\n", entity, SMA, unit);
+	printf("Simple Moving Average of %s data = %f %s\n", entity, SMA, unit);
 }
 
 int main() 
