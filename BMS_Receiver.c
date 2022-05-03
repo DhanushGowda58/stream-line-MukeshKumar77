@@ -30,7 +30,7 @@ int main()
    } 
 for( i=0; i<600; i++ ) 
    {
-	 printf("%d", TempData[i]);
+	 printf("%d\n", TempData[i]);
    } 
 printf("Computing Min and Max\n");
 findMinMax();
