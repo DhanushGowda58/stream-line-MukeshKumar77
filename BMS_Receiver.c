@@ -26,7 +26,7 @@ int main()
 	TempData[i] = getc(stdin);
    } 
 
-   for( k=24; k<500; k++ ) 
+   for( k=24; k<150; k++ ) 
    {
 	printf("%c", TempData[k]);
    }	
