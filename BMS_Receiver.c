@@ -10,7 +10,7 @@ static void findMinMax()
 	  min = max = TempData[24];
 	  for( j=24; j<165; j++ ) 
 	   {
-		if (TempData[i] != ' ')
+		if (TempData[j] != ' ')
 		{
 			if (min > TempData[j])
 				min = TempData[j];
