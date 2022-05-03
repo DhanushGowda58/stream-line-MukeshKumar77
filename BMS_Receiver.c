@@ -78,11 +78,11 @@ Avg(TempData, entity, unit);
 SimMovAvg(TempData, entity, unit);
 	
 SoCReadConsole();
-entity[] = "SoC";
-unit[] = "%";
-findMinMax(SoCData, entity, unit);
-Avg(SoCData, entity, unit);
-SimMovAvg(SoCData, entity, unit);
+char SoCentity[] = "SoC";
+char SoCunit[] = "%";
+findMinMax(SoCData, SoCentity, SoCunit);
+Avg(SoCData, SoCentity, SoCunit);
+SimMovAvg(SoCData, SoCentity, SoCunit);
 return 0;
 }
 
