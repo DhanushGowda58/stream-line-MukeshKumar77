@@ -47,7 +47,7 @@ scanf("%20s", TempRead);
 void SimMovAvg(int Data[], char *entity, char *unit)
 {
 	float SMA = 0.0;
-	for (int k=0; k<47; k++)
+	for (int k=0; k<46; k++)
 		SMA = (TempData[k]+TempData[k+1]+TempData[k+2]+TempData[k+3]+TempData[k+4]) / 5;
 	printf("Simple Moving Average of %s data = %f %s\n", entity, SMA, unit);
 }
