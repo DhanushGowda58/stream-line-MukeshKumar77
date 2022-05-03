@@ -19,9 +19,10 @@ void findMinMax()
 
 static void MovAvg(int TempData[])
 {
+	float SMA = 0.0;
 	for (int i=0;i<50;i++)
 	{
-		float SMA += TempData[i]/50; 
+		SMA += TempData[i]/50; 
 		printf("Moving Average = %0.4f degC \n", SMA);
 	}
 }
