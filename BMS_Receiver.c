@@ -24,9 +24,10 @@ int main()
 //long int i =0;
    //for( i=0; i<15; i++ ) 
    //{
-	TempData = getc(stdin);
+	//TempData[i] = getc(stdin);
 	//printf("%c", TempData[i]);
    //} 
+	scanf("%20s", TempData);
 printf("\n%s\n", TempData);
 printf("Computing Min and Max\n");
 findMinMax();
