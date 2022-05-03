@@ -6,17 +6,14 @@ char TempData[600];
 static void findMinMax()
 {
 	long int j = 0;
-  	int min, max;
+  	char min, max;
 	  min = max = TempData[24];
 	  for( j=24; j<165; j++ ) 
 	   {
-		if (TempData[j] != ' ')
-		{
 			if (min > TempData[j])
 				min = TempData[j];
 			if (max < TempData[j])
 				max = TempData[j];
-		}
 	   }  
 	  printf("\n Minimum value = %c\n", min);
 	  printf("Maximum value = %c\n", max);
@@ -25,14 +22,14 @@ static void findMinMax()
 int main() 
 {
 long int i =0;
-   for( i=0; i<165; i++ ) 
+   for( i=0; i<3; i++ ) 
    {
 	TempData[i] = getc(stdin);
 	//printf("%c", TempData[i]);
    } 
 printf("\n%s\n", TempData);
 printf("Computing Min and Max\n");
-findMinMax();
+findMinMax(TempData);
 return 0;
 }
 
