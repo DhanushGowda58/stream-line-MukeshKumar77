@@ -3,20 +3,6 @@
 
 char TempData[600];
 
-char *remove_white_spaces(char *TempData)
-{
-	int i = 0, j = 0;
-	while (TempData[i])
-	{
-		if (TempData[i] != ' ')
-			TempData[j++] = TempData[i];
-		i++;
-		printf("%d", TempData[j]);
-	}
-	TempData[j] = '\0';
-
-}
-
 static void findMinMax()
 {
 	long int j = 0;
@@ -40,10 +26,10 @@ long int i =0;
    for( i=0; i<600; i++ ) 
    {
 	TempData[i] = getc(stdin);
-	 printf("%c", TempData[i]);
+	 printf("%c - %d", TempData[i],TempData[i]);
 
    } 
-remove_white_spaces(TempData);
+
 printf("Computing Min and Max\n");
 findMinMax();
 return 0;
