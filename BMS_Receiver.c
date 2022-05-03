@@ -52,7 +52,7 @@ int i = 0;
 scanf("%20s", SoCRead);
 scanf("%20s", SoCRead);
 scanf("%20s", SoCRead);
-printf("%20s", SoCRead);
+//printf("%20s", SoCRead);
 	for(i=0;i<50;i++)
 	{
 		scanf("%d", &SoCData[i]);
@@ -76,7 +76,7 @@ char unit[] = "degC";
 findMinMax(TempData, entity, unit);
 Avg(TempData, entity, unit);
 SimMovAvg(TempData, entity, unit);
-	
+printf("\n===============================================================\n");
 SoCReadConsole();
 char SoCentity[] = "SoC";
 char SoCunit[] = "%";
