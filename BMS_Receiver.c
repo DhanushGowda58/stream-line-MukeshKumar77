@@ -16,8 +16,8 @@ static void findMinMax()
 			max = TempData[j];
 	    //putc(TempData[j],stdout);
 	   }  
-	  printf("\n Minimum value = %d\n", min);
-	  printf("Maximum value = %d\n", max);
+	  printf("\n Minimum value = %c\n", min);
+	  printf("Maximum value = %c\n", max);
 }
 
 int main() 
