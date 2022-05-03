@@ -4,18 +4,18 @@
 
 int TempData[50] = {0};
 
-void findMinMax()
+void findMinMax(int Data[], char *entity, char *unit)
 {
 	int min , max;
-	min = max = TempData[0];
+	min = max = Data[0];
 	  for( int j=0; j<50; j++ ) 
 	   {
-			if (min > TempData[j])
-				min = TempData[j];
-			if (max < TempData[j])
-				max = TempData[j];
+			if (min > Data[j])
+				min = Data[j];
+			if (max < Data[j])
+				max = Data[j];
 	   }  
-	  printf("\nMinimum Temperature = %d degC, Maximum Temperature = %d degC\n", min, max);
+	  printf("\nMinimum %s = %d\t%d, Maximum %s = %d\t%d\n", entity, min, unit, entity, max, unit);
 }
 
 void Avg(int Data[], char *entity, char *unit)
@@ -43,11 +43,9 @@ printf("%20s", TempRead);
 		scanf("%d", &TempData[i]);
 		//printf("\n%d\n", TempData[i]);
 	}
-
-printf("Computing Min and Max\n");
-findMinMax();
 char entity[] = "Temperature";
 char unit[] = "degC";
+findMinMax(TempData, entity, unit);
 Avg(TempData, entity, unit);
 return 0;
 }
