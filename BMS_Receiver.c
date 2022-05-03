@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
+int TempData[50] = {0};
 static void findMinMax()
 {
 	long int j = 0;
@@ -28,7 +28,7 @@ int main()
    //} 
 
 char TempRead[600];
-int TempData[50] = {0}, i = 0;
+int i = 0;
 scanf("%20s", TempRead);
 scanf("%20s", TempRead);
 scanf("%20s", TempRead);
