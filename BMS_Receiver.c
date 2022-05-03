@@ -33,6 +33,7 @@ scanf("%20s", TempRead);
 scanf("%20s", TempRead);
 scanf("%20s", TempRead);
 scanf("%20s", TempRead);
+	printf("%20s", TempRead);
 	for(i=0;i<3;i++)
 	{
 		scanf("%d", &TempData[i]);
