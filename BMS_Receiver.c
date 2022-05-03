@@ -27,7 +27,10 @@ int main()
 	//TempData[i] = getc(stdin);
 	//printf("%c", TempData[i]);
    //} 
-	scanf("%40s", TempData);
+scanf("%20s", TempData);
+scanf("%20s", TempData);
+scanf("%20s", TempData);
+scanf("%20s", TempData);
 printf("\n%s\n", TempData);
 printf("Computing Min and Max\n");
 findMinMax();
