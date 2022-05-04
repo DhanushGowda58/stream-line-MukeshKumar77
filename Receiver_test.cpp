@@ -9,8 +9,3 @@ TEST_CASE("Retrieving data from console")
     REQUIRE(BMS_Receiver() == 0);
 }
 
-TEST_CASE("Retrieving data from console")
-{
-    REQUIRE(SimMovAvg() == 73.800003);
-}
-
