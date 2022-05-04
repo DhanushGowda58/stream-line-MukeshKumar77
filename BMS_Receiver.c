@@ -88,6 +88,7 @@ char SoCunit[] = "%";
 findMinMax(SoCData, SoCentity, SoCunit, NoOfReadings);
 Avg(SoCData, SoCentity, SoCunit, NoOfReadings);
 SimMovAvg(SoCData, SoCentity, SoCunit, NoOfReadings);
+printf("\n====================STREAMLINE PROJECT TESTCASES====================\n");
 return 0;
 }
 
