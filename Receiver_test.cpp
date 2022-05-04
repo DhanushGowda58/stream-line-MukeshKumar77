@@ -9,6 +9,14 @@ TEST_CASE("Retrieving data from console")
     REQUIRE(BMS_Receiver() == 0);
 }
 
+TEST_CASE("Computing Maximum")
+{
+    int Data[10] = {20,10,30,5,0,50,60,80,25,12};
+    char entity[] = "Temperature";
+    char unit[] = "degC - TESTCASE";
+    REQUIRE(findMinMax(Data, entity, unit, 10) == 80);
+}
+
 TEST_CASE("Simple Moving Average -> Success Case")
 {
     int Data[10] = {20,10,30,5,0,50,60,80,25,12};
