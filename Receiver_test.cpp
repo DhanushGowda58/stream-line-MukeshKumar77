@@ -3,10 +3,8 @@
 #include "test/catch.hpp"
 #include "BMS_Receiver.h"
 
-FILE* fptr;
-int sensorData[NUMBERS_OF_READINGS];
 
-TEST_CASE("Retrieving data to console")
+TEST_CASE("Retrieving data from console")
 {
     REQUIRE(BMS_Receiver() == 0);
 }
