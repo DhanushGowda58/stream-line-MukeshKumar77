@@ -9,3 +9,9 @@ TEST_CASE("Retrieving data from console")
     REQUIRE(BMS_Receiver() == 0);
 }
 
+TEST_CASE("Simple Moving Average")
+{
+    int Data[5] = {1,2,3,4,5};
+    REQUIRE(SimMovAvg(Data, "Temperature", "degC", 5) == 3)
+}
+
