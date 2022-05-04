@@ -6,7 +6,7 @@
 int TempData[NUMBERS_OF_READINGS] = {0};
 int SoCData[NUMBERS_OF_READINGS] = {0};
 
-void findMinMax(int Data[], char *entity, char *unit)
+int findMinMax(int Data[], char *entity, char *unit)
 {
 	int min , max;
 	min = max = Data[0];
@@ -18,9 +18,10 @@ void findMinMax(int Data[], char *entity, char *unit)
 				max = Data[j];
 	   }  
 	  printf("\nMinimum %s = %d %s, Maximum %s = %d %s\n", entity, min, unit, entity, max, unit);
+	return max;
 }
 
-void Avg(int Data[], char *entity, char *unit)
+float Avg(int Data[], char *entity, char *unit)
 {
 	float Average = 0.0;
 	for (int i=0;i<NUMBERS_OF_READINGS;i++)
@@ -29,6 +30,7 @@ void Avg(int Data[], char *entity, char *unit)
 	}
 	Average = Average/NUMBERS_OF_READINGS;
 	printf("%s Average = %f %s\n", entity, Average, unit);
+	return Average;
 }
 
 void TempReadConsole()
@@ -61,12 +63,13 @@ scanf("%20s", SoCRead);
 	}
 }
 
-void SimMovAvg(int Data[], char *entity, char *unit)
+float SimMovAvg(int Data[], char *entity, char *unit)
 {
 	float SMA = 0.0;
 	for (int k=0; k<(NUMBERS_OF_READINGS-4); k++)
 		SMA = float (Data[k]+Data[k+1]+Data[k+2]+Data[k+3]+Data[k+4]) / 5;
 	printf("Simple Moving Average of %s data = %f %s\n", entity, SMA, unit);
+	return SMA;
 }
 
 int BMS_Receiver() 
