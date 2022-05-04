@@ -1,15 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include "BMS_Receiver.h"
 
-int TempData[50] = {0};
-int SoCData[50] = {0};
+int TempData[NUMBERS_OF_READINGS] = {0};
+int SoCData[NUMBERS_OF_READINGS] = {0};
 
 void findMinMax(int Data[], char *entity, char *unit)
 {
 	int min , max;
 	min = max = Data[0];
-	  for( int j=0; j<50; j++ ) 
+	  for( int j=0; j<NUMBERS_OF_READINGS; j++ ) 
 	   {
 			if (min > Data[j])
 				min = Data[j];
@@ -22,11 +23,11 @@ void findMinMax(int Data[], char *entity, char *unit)
 void Avg(int Data[], char *entity, char *unit)
 {
 	float Average = 0.0;
-	for (int i=0;i<50;i++)
+	for (int i=0;i<NUMBERS_OF_READINGS;i++)
 	{
 		Average += Data[i];
 	}
-	Average = Average/50;
+	Average = Average/NUMBERS_OF_READINGS;
 	printf("%s Average = %f %s\n", entity, Average, unit);
 }
 
@@ -38,7 +39,7 @@ scanf("%20s", TempRead);
 scanf("%20s", TempRead);
 scanf("%20s", TempRead);
 //printf("%20s", TempRead);
-	for(i=0;i<50;i++)
+	for(i=0;i<NUMBERS_OF_READINGS;i++)
 	{
 		scanf("%d", &TempData[i]);
 		//printf("\n%d\n", TempData[i]);
@@ -53,7 +54,7 @@ scanf("%20s", SoCRead);
 scanf("%20s", SoCRead);
 scanf("%20s", SoCRead);
 //printf("%20s", SoCRead);
-	for(i=0;i<50;i++)
+	for(i=0;i<NUMBERS_OF_READINGS;i++)
 	{
 		scanf("%d", &SoCData[i]);
 		//printf("\n%d\n", TempData[i]);
@@ -63,7 +64,7 @@ scanf("%20s", SoCRead);
 void SimMovAvg(int Data[], char *entity, char *unit)
 {
 	float SMA = 0.0;
-	for (int k=0; k<46; k++)
+	for (int k=0; k<(NUMBERS_OF_READINGS-4); k++)
 		SMA = float (Data[k]+Data[k+1]+Data[k+2]+Data[k+3]+Data[k+4]) / 5;
 	printf("Simple Moving Average of %s data = %f %s\n", entity, SMA, unit);
 }
