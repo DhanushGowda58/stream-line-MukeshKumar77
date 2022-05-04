@@ -13,7 +13,15 @@ TEST_CASE("Simple Moving Average")
 {
     int Data[5] = {1,2,3,4,5};
     char entity[] = "Temperature";
-    char unit[] = "degC";
+    char unit[] = "degC - TESTCASE";
     REQUIRE(SimMovAvg(Data, entity, unit, 5) == 3.0);
+}
+
+TEST_CASE("Simple Moving Average")
+{
+    int Data[5] = {1,2,3,4,5};
+    char entity[] = "Temperature";
+    char unit[] = "degC - TESTCASE";
+    REQUIRE(SimMovAvg(Data, entity, unit, 5) == 2.0);
 }
 
