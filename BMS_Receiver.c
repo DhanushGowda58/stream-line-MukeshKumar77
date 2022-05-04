@@ -69,7 +69,7 @@ void SimMovAvg(int Data[], char *entity, char *unit)
 	printf("Simple Moving Average of %s data = %f %s\n", entity, SMA, unit);
 }
 
-int main() 
+int BMS_Receiver() 
 {
 TempReadConsole();
 char entity[] = "Temperature";
