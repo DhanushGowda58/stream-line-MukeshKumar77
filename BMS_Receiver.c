@@ -75,7 +75,7 @@ float SimMovAvg(int Data[], char *entity, char *unit, int NoOfReadings)
 int BMS_Receiver() 
 {
 int NoOfReadings = NUMBERS_OF_READINGS;
-TempReadConsole();
+TempReadConsole(int NoOfReadings);
 char entity[] = "Temperature";
 char unit[] = "degC";
 findMinMax(TempData, entity, unit, NoOfReadings);
