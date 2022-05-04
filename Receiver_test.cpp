@@ -8,5 +8,5 @@ int sensorData[NUMBERS_OF_READINGS];
 
 TEST_CASE("Retrieving data to console")
 {
-    REQUIRE(BMS_Receiver() == true);
+    REQUIRE(BMS_Receiver() == 0);
 }
