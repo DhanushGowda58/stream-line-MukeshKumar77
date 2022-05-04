@@ -68,7 +68,7 @@ float SimMovAvg(int Data[], char *entity, char *unit, int NoOfReadings)
 	float SMA = 0.0;
 	for (int k=0; k<(NoOfReadings-4); k++)
 		SMA = float (Data[k]+Data[k+1]+Data[k+2]+Data[k+3]+Data[k+4]) / 5;
-	printf("Simple Moving Average of %s data = %f %s\n", entity, SMA, unit);
+	printf("Simple Moving Average of %s data = %.1f %s\n", entity, SMA, unit);
 	return SMA;
 }
 
