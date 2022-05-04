@@ -11,10 +11,10 @@ TEST_CASE("Retrieving data from console")
 
 TEST_CASE("Simple Moving Average -> Success Case")
 {
-    int Data[5] = {1,2,3,4,5};
+    int Data[10] = {20,10,30,5,0,50,60,80,25,12};
     char entity[] = "Temperature";
     char unit[] = "degC - TESTCASE";
-    REQUIRE(SimMovAvg(Data, entity, unit, 5) == 3.0);
+    REQUIRE(SimMovAvg(Data, entity, unit, 5) == 45.4);
 }
 
 TEST_CASE("Simple Moving Average -> Failure Case")
