@@ -9,7 +9,7 @@ TEST_CASE("Retrieving data from console")
     REQUIRE(BMS_Receiver() == 0);
 }
 
-TEST_CASE("Simple Moving Average")
+TEST_CASE("Simple Moving Average -> Success Case")
 {
     int Data[5] = {1,2,3,4,5};
     char entity[] = "Temperature";
@@ -17,7 +17,7 @@ TEST_CASE("Simple Moving Average")
     REQUIRE(SimMovAvg(Data, entity, unit, 5) == 3.0);
 }
 
-TEST_CASE("Simple Moving Average")
+TEST_CASE("Simple Moving Average -> Failure Case")
 {
     int Data[5] = {1,2,3,4,5};
     char entity[] = "Temperature";
