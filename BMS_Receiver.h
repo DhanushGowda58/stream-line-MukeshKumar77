@@ -4,4 +4,5 @@
 #include <stdbool.h>
 
 
-#define NUMBERS_OF_READINGS    50
+#define NUMBERS_OF_READINGS 50
+int BMS_Receiver(void); 
