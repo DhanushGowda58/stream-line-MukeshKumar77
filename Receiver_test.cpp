@@ -3,7 +3,8 @@
 #include "test/catch.hpp"
 #include "BMS_Receiver.h"
 
-printf("=========================== TEST CASES ===========================\n");
+cout << "===========================STREAMLINE PROJECT TEST CASES ===========================\n";
+
 TEST_CASE("Computing MinMax")
 {
     int Data[10] = {20,10,30,5,-1,50,60,80,25,12};
