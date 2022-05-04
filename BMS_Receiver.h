@@ -6,4 +6,5 @@
 
 #define NUMBERS_OF_READINGS 50
 int BMS_Receiver(void); 
+int findMinMax(int Data[], char *entity, char *unit, int NoOfReadings);
 float SimMovAvg(int Data[], char *entity, char *unit, int NoOfReadings);
