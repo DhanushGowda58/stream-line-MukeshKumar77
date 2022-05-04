@@ -15,7 +15,7 @@ jobs:
       run: g++ -Wall -Wextra -o testsender sender_test.cpp BMS_sender.c
   
     - name: build receiver
-      run: g++ -Wall -Wextra -o testreceiver BMS_Receiver.c
+      run: g++ -Wall -Wextra -o testreceiver Receiver_test.cpp BMS_Receiver.c
   
     - name: run sender
       run: ./testsender
