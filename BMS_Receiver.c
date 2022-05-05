@@ -6,6 +6,8 @@
 int TempData[NUMBERS_OF_READINGS] = {0};
 int SoCData[NUMBERS_OF_READINGS] = {0};
 
+// Conmpute Minimum and Maximum of dataset
+
 int findMinMax(int Data[], char *entity, char *unit, int NoOfReadings)
 {
 	int min , max;
@@ -21,6 +23,7 @@ int findMinMax(int Data[], char *entity, char *unit, int NoOfReadings)
 	return max;
 }
 
+// Compute average of dataset
 float Avg(int Data[], char *entity, char *unit, int NoOfReadings)
 {
 	float Average = 0.0;
@@ -33,6 +36,7 @@ float Avg(int Data[], char *entity, char *unit, int NoOfReadings)
 	return Average;
 }
 
+// Function to read the temperature data from console
 void TempReadConsole(int NoOfReadings)
 {
 char TempRead[600];
@@ -48,6 +52,7 @@ scanf("%20s", TempRead);
 	}
 }
 
+// Function to read the SoC data from console
 void SoCReadConsole(int NoOfReadings)
 {
 char SoCRead[600];
@@ -63,6 +68,7 @@ scanf("%20s", SoCRead);
 	}
 }
 
+// Compute Simple Moving Average and output SMA for last 5 values
 float SimMovAvg(int Data[], char *entity, char *unit, int NoOfReadings)
 {
 	float SMA = 0.0;
@@ -72,6 +78,7 @@ float SimMovAvg(int Data[], char *entity, char *unit, int NoOfReadings)
 	return SMA;
 }
 
+// Main process
 int BMS_Receiver() 
 {
 int NoOfReadings = NUMBERS_OF_READINGS;
