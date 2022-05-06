@@ -14,7 +14,7 @@ TEST_CASE("Computing MinMax")
     int Data[10] = {20,10,30,5,-1,50,60,80,25,12};
     char entity[] = "Temperature";
     char unit[] = "degC - TESTCASE";
-    REQUIRE(findMinMax(Data, entity, unit, 10) == 80);
+    REQUIRE(findMinMax(Data, entity, unit, 10) == 100);
 }
 
 TEST_CASE("Computing Average")
